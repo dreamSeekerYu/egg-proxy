@@ -29,9 +29,9 @@ module.exports = (appInfo) => {
     // myAppName: 'egg',
   }
   config.httpProxy = {
-    '/api': {
+    '/public/api': {
       target: 'http://81.70.36.99:8001',
-      pathRewrite: { '^/api': '' },
+      pathRewrite: { '^/public/api': '' },
     },
   }
   config.security = {

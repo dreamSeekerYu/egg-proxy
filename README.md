@@ -31,3 +31,14 @@ $ npm stop
 
 
 [egg]: https://eggjs.org
+
+
+##### 请求转发的时候需要改写前缀为符合要求的格式
+```
+  config.httpProxy = {
+    '/public/api': {
+      target: 'http://81.70.36.99:8001',
+      pathRewrite: { '^/public/api': '' },
+    },
+  }
+```
