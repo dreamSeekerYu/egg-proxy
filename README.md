@@ -1,6 +1,6 @@
 # egg
 
-
+查看前端静态资源的路劲为  域名+ /public/index.html
 
 ## QuickStart
 
