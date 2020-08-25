@@ -34,6 +34,11 @@ module.exports = (appInfo) => {
       pathRewrite: { '^/api': '' },
     },
   }
+  config.security = {
+    csrf: {
+      enable: false,
+    },
+  }
 
   return {
     ...config,
